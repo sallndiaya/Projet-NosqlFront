@@ -8,7 +8,7 @@ const [produits, setProduits] = useState([]);
 
 useEffect(() => {
 	axios
-	.get("http://localhost:4000/produits/")
+	.get("https://api-rest-produit.onrender.com/produits/")
 	.then(({ data }) => {
 		setProduits(data);
 	})
