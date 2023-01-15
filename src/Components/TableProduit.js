@@ -9,7 +9,7 @@ const { _id, name, typeProduit, prix,quantite } = props.obj;
 const deleteProduit = () => {
 	axios
 	.delete(
-"http://localhost:4000/produits/delete-produit/" + _id)
+"https://api-rest-produit.onrender.com/produits/delete-produit/" + _id)
 	.then((res) => {
 		if (res.status === 200) {
 		alert("Produit successfully deleted");
