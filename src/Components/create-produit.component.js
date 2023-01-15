@@ -12,7 +12,7 @@ const [formValues, setFormValues] =
 // onSubmit handler
 const onSubmit = produitObject => {
 	axios.post(
-'http://localhost:4000/produits/create-produit',
+'https://api-rest-produit.onrender.com/produits/create-produit',
 	produitObject)
 	.then(res => {
 		if (res.status === 200)
