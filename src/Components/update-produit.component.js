@@ -40,7 +40,7 @@ useEffect(() => {
 	)
 	.then((res) => {
 		const { name, typeProduit, prix } = res.data;
-		setFormValues({ name, typeProduit, prix,quantite});
+		setFormValues({ name, typeProduit, prix});
 	})
 	.catch((err) => console.log(err));
 }, []);
