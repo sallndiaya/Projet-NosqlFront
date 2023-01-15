@@ -35,7 +35,7 @@ const onSubmit = (produitObject) => {
 useEffect(() => {
 	axios
 	.get(
-		"http://localhost:4000/produits/update-produit/"
+		"https://api-rest-produit.onrender.com/produits/update-produit/"
 		+ props.match.params.id
 	)
 	.then((res) => {
